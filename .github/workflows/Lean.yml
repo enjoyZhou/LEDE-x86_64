@@ -61,7 +61,9 @@ jobs:
         ./scripts/feeds install -a
         
     - name: 创建配置文件
-      run: make defconfig
+      working-directory: ./openwrt
+      run: ｜
+        make defconfig
       
     # - name: 自定义配置文件Lean
     #   env:
